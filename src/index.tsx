@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './router/App';
 import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
 import { Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { Route, BrowserRouter } from "react-router-dom";
@@ -19,5 +18,3 @@ if (container) {
 </BrowserRouter>
 );
 }
-
-reportWebVitals(sendToVercelAnalytics);
